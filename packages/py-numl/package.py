@@ -30,7 +30,8 @@ class PyNuml(PythonPackage):
 
     depends_on("py-flit-core", type="build")
 
-    depends_on("py-h5py")
+    depends_on("mpich")
+    depends_on("py-h5py +mpi")
     depends_on("py-pandas")
     depends_on("py-particle")
     depends_on("py-plotly")
